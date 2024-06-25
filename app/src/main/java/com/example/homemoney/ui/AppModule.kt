@@ -11,7 +11,11 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModule {
-
+    /**
+     * Предоставляет экземпляр NavigationHandler, внедряемый в MenuViewModel.
+     * @param context Контекст приложения.
+     * @return Экземпляр NavigationHandler.
+     */
     @Provides
     @Singleton
     fun provideNavigationHandler(@ApplicationContext context: Context): NavigationHandler {

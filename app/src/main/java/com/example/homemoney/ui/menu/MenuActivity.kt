@@ -12,20 +12,27 @@ class MenuActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-
+// Инициализация обработчиков нажатий на кнопки
         initListeners()
     }
+    /**
+     * Инициализирует обработчики нажатий на кнопки меню.
+     * При нажатии на кнопку вызывается соответствующий метод в ViewModel.
+     */
     private fun initListeners() {
-        // Настройка обработчиков нажатий на кнопки
+        // Обработчик нажатия на кнопку "Экран затрат"
         findViewById<Button>(R.id.btn_to_expense_screen).setOnClickListener {
             viewModel.onExpenseScreenClicked()
         }
+        // Обработчик нажатия на кнопку "Экран истории"
         findViewById<Button>(R.id.btn_to_history_screen).setOnClickListener {
             viewModel.onHistoryScreenClicked()
         }
+        // Обработчик нажатия на кнопку "Экран аналитики"
         findViewById<Button>(R.id.btn_to_analytics_screen).setOnClickListener {
             viewModel.onAnalyticsScreenClicked()
         }
+        // Обработчик нажатия на кнопку "Выход"
         findViewById<Button>(R.id.btn_exit).setOnClickListener {
             viewModel.onExitClicked()
         }
