@@ -28,6 +28,8 @@
         <activity
             android:name=".ui.history.HistoryActivity"
             android:exported="false"></activity>
+        <activity android:name=".ui.expense.ExpenseActivity"></activity>
+        <activity android:name=".ui.analytics.AnalyticsActivity"></activity>
     </application>
 
 </manifest>
