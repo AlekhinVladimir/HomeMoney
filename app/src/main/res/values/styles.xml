@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="Widget.Theme.HomeMoney.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.HomeMoney.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="HomeMoneyTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDx">20</item>
+        <item name="android:shadowDy">10</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:textColor">@color/gold</item>
+    </style>
+</resources>
