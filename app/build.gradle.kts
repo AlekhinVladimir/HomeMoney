@@ -48,13 +48,13 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.hilt.android)
+//    implementation(libs.hilt.compiler)   //Возникает ошибка при установке hilt-compiler вместо dagger-compiler - "Execution failed for task ':app:mergeExtDexDebug'". Лечения не нашел
+//    kapt ("com.google.dagger:hilt-compiler:2.51.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    annotationProcessor("com.google.dagger:dagger-compiler:2.51.1")
     kapt("com.google.dagger:dagger-compiler:2.51.1")
     implementation("com.google.dagger:dagger:2.51.1")
-    annotationProcessor("androidx.room:room-compiler:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
 
