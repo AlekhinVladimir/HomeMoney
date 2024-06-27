@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">HomeMoney</string>
+    <string name="menu">Меню</string>
+    <string name="start">Старт</string>
     <string name="label">Деньги Дома</string>
+    <string name="title_activity_history">История операций</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="to_expense_screen">Записать</string>
+    <string name="to_history_screen">История операций</string>
+    <string name="to_analytics_screen">Аналитика</string>
+    <string name="exit">Выход</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="comment">Комментарий</string>
+    <string name="type">Тип</string>
+    <string name="category">Категория</string>
+    <string name="amount">Сумма</string>
 </resources>
